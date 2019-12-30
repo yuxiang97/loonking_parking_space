@@ -1,0 +1,40 @@
+
+html {
+    font-size: 13.3333333333333vw;
+}
+
+body,ul,li,p,input,h3,dl,dt,dd,h4{
+    margin: 0;
+    padding: 0;
+}
+
+a,b {
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+b {
+    font-weight: normal;
+}
+
+body {
+    background: #ffffff;
+}
+
+input {
+    border: none;
+    outline: none;
+}
