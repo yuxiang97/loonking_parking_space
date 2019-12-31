@@ -1,21 +1,41 @@
 <template>
   <div class="tabber">
-    <a href="">
-      <img src="../assets/img/tab-bar/parking-.png" alt="" />
+    <router-link class="link" to="/">
+      <img
+        v-if="$route.name === 'home'"
+        src="../assets/img/tab-bar/parking-.png"
+        alt=""
+      />
+      <img v-else src="../assets/img/tab-bar/Parking.png" alt="" />
       <span>找车位</span>
-    </a>
-    <a href="">
-      <img src="../assets/img/tab-bar/shopping.png" alt="" />
+    </router-link>
+    <router-link class="link" to="/Shopping">
+      <img
+        v-if="$route.name === 'shopping'"
+        src="../assets/img/tab-bar/shopping-.png"
+        alt=""
+      />
+      <img v-else src="../assets/img/tab-bar/shopping.png" alt="" />
       <span>商城</span>
-    </a>
-    <a href="">
-      <img src="../assets/img/tab-bar/od.png" alt="" />
+    </router-link>
+    <router-link class="link" to="/Order">
+      <img
+        v-if="$route.name === 'order'"
+        src="../assets/img/tab-bar/od-.png"
+        alt=""
+      />
+      <img v-else src="../assets/img/tab-bar/od.png" alt="" />
       <span>订单</span>
-    </a>
-    <a href="">
-      <img src="../assets/img/tab-bar/my.png" alt="" />
+    </router-link>
+    <router-link class="link" to="/My">
+      <img
+        v-if="$route.name === 'my'"
+        src="../assets/img/tab-bar/my-.png"
+        alt=""
+      />
+      <img v-else src="../assets/img/tab-bar/my.png" alt="" />
       <span>我的</span>
-    </a>
+    </router-link>
   </div>
 </template>
 
@@ -35,8 +55,8 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  a {
-    display: block;
+  .link {
+    /*display: block;*/
     width: 25%;
     height: 0.98rem;
     img {
@@ -51,6 +71,9 @@ export default {
       line-height: 0.6rem;
       color: #b0b0b0;
       text-align: center;
+    }
+    &.active {
+      color: #ff7126;
     }
   }
 }

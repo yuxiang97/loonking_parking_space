@@ -1,15 +1,6 @@
 <template>
   <div class="home">
-    <div v-if="flag" class="start">
-      <div class="page">
-        <div class="start-page">
-          <img src="../assets/img/home/start-icon.png" alt="" />
-          <span>找车位</span>
-        </div>
-        <p>智能找车位，第一时间找到属于你的车位</p>
-      </div>
-    </div>
-    <div v-else>
+    <div>
       <nav>
         <img src="../assets/img/home/icon6.png" alt="g" />
       </nav>
@@ -55,15 +46,8 @@ export default {
   data() {
     return {
       center: { lng: 0, lat: 0 },
-      zoom: 3,
-      flag: true
+      zoom: 3
     };
-  },
-  mounted() {
-    const self = this;
-    setTimeout(() => {
-      self.flag = false;
-    }, 2000);
   },
   methods: {
     handler() {
