@@ -1,6 +1,6 @@
 <template>
   <div class="tabber">
-    <router-link class="link" to="/">
+    <router-link class="link" :to="{ name: 'home' }">
       <img
         v-if="$route.name === 'home'"
         src="../assets/img/tab-bar/parking-.png"
@@ -9,7 +9,7 @@
       <img v-else src="../assets/img/tab-bar/Parking.png" alt="" />
       <span>找车位</span>
     </router-link>
-    <router-link class="link" to="/Shopping">
+    <router-link class="link" :to="{ name: 'shopping' }">
       <img
         v-if="$route.name === 'shopping'"
         src="../assets/img/tab-bar/shopping-.png"
@@ -18,7 +18,7 @@
       <img v-else src="../assets/img/tab-bar/shopping.png" alt="" />
       <span>商城</span>
     </router-link>
-    <router-link class="link" to="/Order">
+    <router-link class="link" :to="{ name: 'order' }">
       <img
         v-if="$route.name === 'order'"
         src="../assets/img/tab-bar/od-.png"
@@ -27,7 +27,7 @@
       <img v-else src="../assets/img/tab-bar/od.png" alt="" />
       <span>订单</span>
     </router-link>
-    <router-link class="link" to="/My">
+    <router-link class="link" :to="{ name: 'my' }">
       <img
         v-if="$route.name === 'my'"
         src="../assets/img/tab-bar/my-.png"
@@ -55,10 +55,11 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  .link {
+  a {
     /*display: block;*/
     width: 25%;
     height: 0.98rem;
+    color: #b0b0b0;
     img {
       display: block;
       margin: 0 auto;
@@ -69,10 +70,10 @@ export default {
       font-size: 0.2rem;
       display: block;
       line-height: 0.6rem;
-      color: #b0b0b0;
+      /*color: #b0b0b0;*/
       text-align: center;
     }
-    &.active {
+    &.red-active {
       color: #ff7126;
     }
   }

@@ -1,5 +1,15 @@
 import Vue from "vue";
-import { Button, Field, Tabbar, Icon, Swipe, SwipeItem, Lazyload } from "vant";
+import {
+  Button,
+  Field,
+  Tabbar,
+  Icon,
+  Swipe,
+  SwipeItem,
+  Lazyload,
+  Tabs,
+  Tab
+} from "vant";
 
 Vue.use(Field);
 Vue.use(Button);
@@ -8,3 +18,5 @@ Vue.use(Icon);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Lazyload);
+Vue.use(Tabs);
+Vue.use(Tab);
