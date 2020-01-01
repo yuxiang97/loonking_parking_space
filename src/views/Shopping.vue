@@ -10,7 +10,7 @@
         </van-swipe-item>
       </van-swipe>
       <div class="points">
-        <div class="title">
+        <div class="title" @click="linkToExchange">
           <span>积分兑换礼品</span>
           <img src="../assets/img/shopping/more.png" alt="" />
         </div>
@@ -102,6 +102,11 @@ export default {
     linkTo() {
       this.$router.push({
         name: "hotsale"
+      });
+    },
+    linkToExchange() {
+      this.$router.push({
+        name: "exchange"
       });
     }
   }

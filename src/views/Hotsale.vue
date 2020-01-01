@@ -3,7 +3,7 @@
     <nav>
       热销榜单
       <div @click="$router.back(-1)">
-        <img src="../assets/img/hotsale/back.png" alt="" />
+        <img src="../assets/img/hotsale/more.png" alt="" />
       </div>
     </nav>
     <div class="content">
