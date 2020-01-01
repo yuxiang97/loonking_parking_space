@@ -5,6 +5,7 @@ import Shopping from "../views/Shopping.vue";
 import Order from "../views/Order.vue";
 import My from "../views/My.vue";
 import hotsale from "../views/Hotsale.vue";
+import exchange from "../views/Exchange.vue";
 
 Vue.use(VueRouter);
 
@@ -38,6 +39,11 @@ const routes = [
     path: "/Shopping/Hotsale",
     name: "hotsale",
     component: hotsale
+  },
+  {
+    path: "/Shopping/Exchange",
+    name: "exchange",
+    component: exchange
   }
 ];
 
