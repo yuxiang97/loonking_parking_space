@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Shopping from "../views/Shopping.vue";
 import Order from "../views/Order.vue";
 import My from "../views/My.vue";
+import hotsale from "../views/Hotsale.vue";
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,11 @@ const routes = [
     path: "/My",
     name: "my",
     component: My
+  },
+  {
+    path: "/Shopping/Hotsale",
+    name: "hotsale",
+    component: hotsale
   }
 ];
 
@@ -39,7 +45,7 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
-  linkExactActiveClass: "red-active"
+  linkExactActiveClass: "active"
 });
 
 export default router;

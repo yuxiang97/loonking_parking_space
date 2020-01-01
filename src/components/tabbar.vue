@@ -73,7 +73,7 @@ export default {
       /*color: #b0b0b0;*/
       text-align: center;
     }
-    &.red-active {
+    &.active {
       color: #ff7126;
     }
   }

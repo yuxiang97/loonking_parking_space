@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="points">
-        <div class="title">
+        <div class="title" v-on:click="linkTo">
           <span>热销榜单</span>
           <img src="../assets/img/shopping/more.png" alt="" />
         </div>
@@ -97,6 +97,13 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    linkTo() {
+      this.$router.push({
+        name: "hotsale"
+      });
+    }
   }
 };
 </script>
@@ -162,6 +169,7 @@ nav {
           overflow: hidden;
         }
         .information {
+          height: 0.2rem;
           font-size: 0.2rem;
           display: flex;
           justify-content: space-between;
