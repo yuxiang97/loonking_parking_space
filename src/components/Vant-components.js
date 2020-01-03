@@ -8,7 +8,9 @@ import {
   SwipeItem,
   Lazyload,
   Tabs,
-  Tab
+  Tab,
+  Radio,
+  RadioGroup
 } from "vant";
 
 Vue.use(Field);
@@ -20,3 +22,5 @@ Vue.use(SwipeItem);
 Vue.use(Lazyload);
 Vue.use(Tabs);
 Vue.use(Tab);
+Vue.use(Radio);
+Vue.use(RadioGroup);

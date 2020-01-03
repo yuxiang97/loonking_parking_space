@@ -10,7 +10,7 @@
         <div class="vip">会员等级</div>
       </div>
       <div class="list">
-        <router-link to="">
+        <router-link to="My/wallet">
           <span>
             <img src="../assets/img/my/icon3.png" alt="" />
           </span>

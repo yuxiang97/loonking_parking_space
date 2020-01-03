@@ -8,6 +8,8 @@ import hotsale from "../views/Hotsale.vue";
 import exchange from "../views/Exchange.vue";
 import setting from "../views/Setting.vue";
 import wallet from "../views/Wallet.vue";
+import topup from "../views/Top-up.vue";
+import coupons from "../views/Coupons.vue";
 
 Vue.use(VueRouter);
 
@@ -56,6 +58,16 @@ const routes = [
     path: "/My/Wallet",
     name: "wallet",
     component: wallet
+  },
+  {
+    path: "/My/Wallet/Top-up",
+    name: "top-up",
+    component: topup
+  },
+  {
+    path: "/My/Wallet/Coupons",
+    name: "coupons",
+    component: coupons
   }
 ];
 
