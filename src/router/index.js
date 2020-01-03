@@ -6,6 +6,7 @@ import Order from "../views/Order.vue";
 import My from "../views/My.vue";
 import hotsale from "../views/Hotsale.vue";
 import exchange from "../views/Exchange.vue";
+import setting from "../views/Setting.vue";
 
 Vue.use(VueRouter);
 
@@ -44,6 +45,11 @@ const routes = [
     path: "/Shopping/Exchange",
     name: "exchange",
     component: exchange
+  },
+  {
+    path: "/My/Setting",
+    name: "setting",
+    component: setting
   }
 ];
 

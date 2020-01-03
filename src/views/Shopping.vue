@@ -181,6 +181,7 @@ nav {
           color: #666;
           margin-bottom: 0.2rem;
           align-items: center;
+          border-bottom: none;
           .price {
             font-size: 0.28rem;
             color: #ff1a1a;

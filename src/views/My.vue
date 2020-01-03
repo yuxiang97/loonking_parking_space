@@ -36,7 +36,7 @@
           </span>
           <i>新手指南</i>
         </router-link>
-        <router-link to="">
+        <router-link to="My/setting">
           <span>
             <img src="../assets/img/my/icon5.png" alt="" />
           </span>
