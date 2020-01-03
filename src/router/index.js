@@ -7,6 +7,7 @@ import My from "../views/My.vue";
 import hotsale from "../views/Hotsale.vue";
 import exchange from "../views/Exchange.vue";
 import setting from "../views/Setting.vue";
+import wallet from "../views/Wallet.vue";
 
 Vue.use(VueRouter);
 
@@ -50,6 +51,11 @@ const routes = [
     path: "/My/Setting",
     name: "setting",
     component: setting
+  },
+  {
+    path: "/My/Wallet",
+    name: "wallet",
+    component: wallet
   }
 ];
 
